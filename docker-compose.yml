@@ -1,0 +1,15 @@
+version: '4'
+services:
+  jenkinsPratica:
+    container_name: treinoCloud
+    image: jk_im_servidor_f:0.1
+    build: 
+     context: .
+     dockerfile: dockerfileIndv
+    ports:
+      - "8080:8080"
+    networks:
+      - leninha
+
+networks:
+  leninha:
